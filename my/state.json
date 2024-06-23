@@ -1,0 +1,200 @@
+{
+  "version": 4,
+  "terraform_version": "1.8.0",
+  "serial": 1,
+  "lineage": "db0d3fa4-222c-401b-9417-799452b95a27",
+  "outputs": {
+    "bool_dir_exists": {
+      "value": true,
+      "type": "bool"
+    }
+  },
+  "resources": [
+    {
+      "mode": "data",
+      "type": "local_file",
+      "name": "foo2",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "content": "456",
+            "content_base64": "NDU2",
+            "content_base64sha256": "s6jg4fmrG/46NvIx9nb3i7MKUZ0rIebFMMDu6Ou0pdA=",
+            "content_base64sha512": "9rB7bBNA6Ue4Yd71+LCS2O5xCCbcVr0XW9yPOhawuKz4U8ZHhqcQ3t+dFSTWHjJQTifWDeFZrxELw5QUkHMVeA==",
+            "content_md5": "250cf8b51c773f3f8dc8b4be867a9a02",
+            "content_sha1": "51eac6b471a284d3341d8c0c63d0f1a286262a18",
+            "content_sha256": "b3a8e0e1f9ab1bfe3a36f231f676f78bb30a519d2b21e6c530c0eee8ebb4a5d0",
+            "content_sha512": "f6b07b6c1340e947b861def5f8b092d8ee710826dc56bd175bdc8f3a16b0b8acf853c64786a710dedf9d1524d61e32504e27d60de159af110bc3941490731578",
+            "filename": "./foo2.bar",
+            "id": "51eac6b471a284d3341d8c0c63d0f1a286262a18"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "local_file",
+      "name": "foo2",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "content": "456",
+            "content_base64": null,
+            "content_base64sha256": "s6jg4fmrG/46NvIx9nb3i7MKUZ0rIebFMMDu6Ou0pdA=",
+            "content_base64sha512": "9rB7bBNA6Ue4Yd71+LCS2O5xCCbcVr0XW9yPOhawuKz4U8ZHhqcQ3t+dFSTWHjJQTifWDeFZrxELw5QUkHMVeA==",
+            "content_md5": "250cf8b51c773f3f8dc8b4be867a9a02",
+            "content_sha1": "51eac6b471a284d3341d8c0c63d0f1a286262a18",
+            "content_sha256": "b3a8e0e1f9ab1bfe3a36f231f676f78bb30a519d2b21e6c530c0eee8ebb4a5d0",
+            "content_sha512": "f6b07b6c1340e947b861def5f8b092d8ee710826dc56bd175bdc8f3a16b0b8acf853c64786a710dedf9d1524d61e32504e27d60de159af110bc3941490731578",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "./foo2.bar",
+            "id": "51eac6b471a284d3341d8c0c63d0f1a286262a18",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "sensitive_content"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "local_sensitive_file",
+      "name": "foo",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "content": "",
+            "content_base64": null,
+            "content_base64sha256": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+            "content_base64sha512": "z4PhNX7vuL3xVChQ1m2AB9Yg5AULVxXcg/SpIdNs6c5H0NE8XYXysP+DGNKHfuwvY7kxvUdBeoGlODJ6+SfaPg==",
+            "content_md5": "d41d8cd98f00b204e9800998ecf8427e",
+            "content_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "content_sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+            "directory_permission": "0700",
+            "file_permission": "0700",
+            "filename": "./foo.bar",
+            "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "source": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "content_base64"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "content"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "null_resource",
+      "name": "example2",
+      "provider": "provider[\"registry.terraform.io/hashicorp/null\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "2906348447967039606",
+            "triggers": null
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "null_resource",
+      "name": "example3",
+      "provider": "provider[\"registry.terraform.io/hashicorp/null\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "id": "7689206030817315514",
+            "triggers": null
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "id": "1562202686717984843",
+            "triggers": null
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 2,
+          "schema_version": 0,
+          "attributes": {
+            "id": "476645895446316130",
+            "triggers": null
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "null_resource",
+      "name": "example4",
+      "provider": "provider[\"registry.terraform.io/hashicorp/null\"]",
+      "instances": [
+        {
+          "index_key": "0",
+          "schema_version": 0,
+          "attributes": {
+            "id": "2585734002780406554",
+            "triggers": null
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": "1",
+          "schema_version": 0,
+          "attributes": {
+            "id": "1662030961161954210",
+            "triggers": null
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": "2",
+          "schema_version": 0,
+          "attributes": {
+            "id": "4629486066071029559",
+            "triggers": null
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
