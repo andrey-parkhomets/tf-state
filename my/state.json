@@ -1,7 +1,7 @@
 {
   "version": 4,
   "terraform_version": "1.8.0",
-  "serial": 10,
+  "serial": 11,
   "lineage": "db0d3fa4-222c-401b-9417-799452b95a27",
   "outputs": {
     "bool_dir_exists": {
@@ -11,13 +11,36 @@
   },
   "resources": [
     {
+      "mode": "data",
+      "type": "local_file",
+      "name": "foo2",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "content": "456",
+            "content_base64": "NDU2",
+            "content_base64sha256": "s6jg4fmrG/46NvIx9nb3i7MKUZ0rIebFMMDu6Ou0pdA=",
+            "content_base64sha512": "9rB7bBNA6Ue4Yd71+LCS2O5xCCbcVr0XW9yPOhawuKz4U8ZHhqcQ3t+dFSTWHjJQTifWDeFZrxELw5QUkHMVeA==",
+            "content_md5": "250cf8b51c773f3f8dc8b4be867a9a02",
+            "content_sha1": "51eac6b471a284d3341d8c0c63d0f1a286262a18",
+            "content_sha256": "b3a8e0e1f9ab1bfe3a36f231f676f78bb30a519d2b21e6c530c0eee8ebb4a5d0",
+            "content_sha512": "f6b07b6c1340e947b861def5f8b092d8ee710826dc56bd175bdc8f3a16b0b8acf853c64786a710dedf9d1524d61e32504e27d60de159af110bc3941490731578",
+            "filename": "./foo2.bar",
+            "id": "51eac6b471a284d3341d8c0c63d0f1a286262a18"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
       "mode": "managed",
       "type": "local_file",
       "name": "foo2",
       "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
       "instances": [
         {
-          "status": "tainted",
           "schema_version": 0,
           "attributes": {
             "content": "456",
