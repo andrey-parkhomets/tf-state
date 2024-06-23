@@ -1,14 +1,9 @@
 {
   "version": 4,
-  "terraform_version": "1.8.0",
-  "serial": 12,
+  "terraform_version": "1.5.6",
+  "serial": 13,
   "lineage": "db0d3fa4-222c-401b-9417-799452b95a27",
-  "outputs": {
-    "bool_dir_exists": {
-      "value": true,
-      "type": "bool"
-    }
-  },
+  "outputs": {},
   "resources": [
     {
       "mode": "data",
@@ -58,14 +53,7 @@
             "sensitive_content": null,
             "source": null
           },
-          "sensitive_attributes": [
-            [
-              {
-                "type": "get_attr",
-                "value": "sensitive_content"
-              }
-            ]
-          ]
+          "sensitive_attributes": []
         }
       ]
     },
@@ -92,20 +80,7 @@
             "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
             "source": null
           },
-          "sensitive_attributes": [
-            [
-              {
-                "type": "get_attr",
-                "value": "content"
-              }
-            ],
-            [
-              {
-                "type": "get_attr",
-                "value": "content_base64"
-              }
-            ]
-          ]
+          "sensitive_attributes": []
         }
       ]
     },
