@@ -1,7 +1,7 @@
 {
   "version": 4,
   "terraform_version": "1.5.6",
-  "serial": 14,
+  "serial": 15,
   "lineage": "db0d3fa4-222c-401b-9417-799452b95a27",
   "outputs": {},
   "resources": [
@@ -64,7 +64,6 @@
       "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
       "instances": [
         {
-          "status": "tainted",
           "schema_version": 0,
           "attributes": {
             "content": "",
