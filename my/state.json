@@ -1,7 +1,7 @@
 {
   "version": 4,
-  "terraform_version": "1.5.6",
-  "serial": 19,
+  "terraform_version": "1.12.1",
+  "serial": 20,
   "lineage": "db0d3fa4-222c-401b-9417-799452b95a27",
   "outputs": {},
   "resources": [
@@ -25,7 +25,8 @@
             "filename": "./foo2.bar",
             "id": "51eac6b471a284d3341d8c0c63d0f1a286262a18"
           },
-          "sensitive_attributes": []
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
         }
       ]
     },
@@ -53,7 +54,15 @@
             "sensitive_content": null,
             "source": null
           },
-          "sensitive_attributes": []
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "sensitive_content"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
         }
       ]
     },
@@ -80,7 +89,21 @@
             "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
             "source": null
           },
-          "sensitive_attributes": []
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "content"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "content_base64"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
         }
       ]
     },
@@ -96,7 +119,8 @@
             "id": "2906348447967039606",
             "triggers": null
           },
-          "sensitive_attributes": []
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
         }
       ]
     },
@@ -113,7 +137,8 @@
             "id": "7689206030817315514",
             "triggers": null
           },
-          "sensitive_attributes": []
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
         },
         {
           "index_key": 1,
@@ -122,7 +147,8 @@
             "id": "1562202686717984843",
             "triggers": null
           },
-          "sensitive_attributes": []
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
         },
         {
           "index_key": 2,
@@ -131,7 +157,8 @@
             "id": "476645895446316130",
             "triggers": null
           },
-          "sensitive_attributes": []
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
         }
       ]
     },
@@ -148,7 +175,8 @@
             "id": "2585734002780406554",
             "triggers": null
           },
-          "sensitive_attributes": []
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
         },
         {
           "index_key": "1",
@@ -157,7 +185,8 @@
             "id": "1662030961161954210",
             "triggers": null
           },
-          "sensitive_attributes": []
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
         },
         {
           "index_key": "2",
@@ -166,7 +195,8 @@
             "id": "4629486066071029559",
             "triggers": null
           },
-          "sensitive_attributes": []
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
         }
       ]
     }
